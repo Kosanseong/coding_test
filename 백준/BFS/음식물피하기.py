@@ -31,6 +31,11 @@ for i in range(n):
                         queue.append((x, y))
                         path[x][y] = 0
 
+            '''
+            처음 발견된 음식물과 연결된 모든 연결을 확인한 다음 maximum과 비교하여 더큰 값을 넣어준다
+            혹은 배열에 넣어서 print 할 때 max(배열)하여 출력하여도 괜찮을 것 같다.
+            그리고 카운트 초기화
+            '''
             maximum = max(maximum, cnt)
             cnt = 1
 
